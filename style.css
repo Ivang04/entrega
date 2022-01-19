@@ -1,0 +1,62 @@
+.grid-container {
+    font-size: 40px;
+    background-color: rgb(177, 108, 24);
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: repeat(3. 100px);
+    gap: 10px;
+
+}
+
+.grid-container>* {
+    background-color: cadetblue;
+    border: 1px solid black;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header,
+footer {
+    grid-column: 1 / span 3;
+}
+
+@media all and (max-width: 600px) {
+
+    aside,
+    article {
+        grid-column: 1 / span 3;
+    }
+
+    .grid-container {
+        grid-template-rows: repeat(4. 100px);
+
+    }
+}
+
+header:hover {
+    background-color: blue;
+    transition: background-color 2s;
+
+
+}
+
+aside:hover {
+    background-color: red;
+    transition: background-color 2s;
+
+}
+
+article:hover {
+    background-color: green;
+    transition: background-color 2s;
+
+}
+
+footer:hover {
+    background-color: yellow;
+    transition: background-color 2s;
+    color: black;
+
+}

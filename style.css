@@ -38,6 +38,7 @@ footer {
 header:hover {
     background-color: blue;
     transition: background-color 2s;
+    clip-path: circle(50%);
 
 
 }
